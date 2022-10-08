@@ -10,7 +10,7 @@ def generate(name: str):
     new = Path(f'{tools}/{file_name}')
 
     if new.exists():
-        click.echo(f'Notebook {file_name} already exists!')
+        click.echo(f'Template {file_name} already exists!')
         return
 
     with open(file=new, mode='w') as tool:
